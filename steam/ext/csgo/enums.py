@@ -378,3 +378,5 @@ class EMsg(IntEnum):
     ClientRequestJoinFriendData            = 9163
     ClientRequestJoinServerData            = 9164
     ClientRequestNewMission                = 9165
+
+    ClientRedeemFreeReward                 = 9219
