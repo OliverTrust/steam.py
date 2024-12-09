@@ -14,6 +14,13 @@ if TYPE_CHECKING:
     from .engine import GotvSyncPacket
 
 
+@dataclass(eq=False, repr=False)
+class AccountItemPersonalStore(betterproto.Message):
+    generation_time: int = betterproto.uint32_field(1)
+    redeemable_balance: int = betterproto.uint32_field(2)
+    items: list = betterproto.uint64_field(3)
+
+
 class ECsgoSteamUserStat(betterproto.Enum):
     XPEarnedGames = 1
     MatchWinsCompetitive = 2
