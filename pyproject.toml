@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "steamio"
-version = "1.1.0"
+version = "1.1.1"
 description = "A Python wrapper for the Steam API"
 authors = ["Gobot1234 <gobot1234yt@gmail.com>"]
 license = "MIT"
@@ -34,7 +34,7 @@ aiohttp = "^3.8"
 beautifulsoup4 = "^4.10"
 cryptography = ">=41,<43"
 betterproto = "2.0.0b6"
-typing-extensions = "4.10.0"
+typing-extensions = "^4.10.0"
 vdf = "^3.4"
 # taskgroup = { git = "https://github.com/Gobot1234/taskgroup", rev = "default", python = "<3.11" }
 
