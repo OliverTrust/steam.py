@@ -27,6 +27,13 @@ class ClientRedeemFreeReward(GCProtobufMessage, msg=EMsg.ClientRedeemFreeReward)
     items: list = betterproto.uint64_field(3)
 
 
+class Client2GCRequestPrestigeCoin(GCProtobufMessage, msg=EMsg.Client2GCRequestPrestigeCoin):
+    defindex: int = betterproto.uint32_field(1)
+    upgradeid : int = betterproto.uint64_field(2)
+    hours: int = betterproto.uint32_field(3)
+    prestigetime: int = betterproto.uint32_field(4)
+
+
 class ECsgoSteamUserStat(betterproto.Enum):
     XPEarnedGames = 1
     MatchWinsCompetitive = 2

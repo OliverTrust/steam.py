@@ -379,4 +379,6 @@ class EMsg(IntEnum):
     ClientRequestJoinServerData            = 9164
     ClientRequestNewMission                = 9165
 
+
     ClientRedeemFreeReward                 = 9219
+    Client2GCRequestPrestigeCoin           = 9172
